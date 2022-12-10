@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pacifico&display=swap');
+
+* {
+  box-sizing: border-box;
+
+  --primary: #2a9d8f;
+  --primary-dark: #264653;
+  --grey: #888;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 2rem;
+
+  &--login {
+    display: flex;
+    max-width: 82%;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  &--title {
+    font-size: 2.3rem;
+    color: var(--primary-dark);
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &-input {
+    width: 100%;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+    border: 1px solid #eee;
+    outline: none;
+
+    &::placeholder {
+      font-size: .75rem;
+      color: var(--grey);
+    }
+  }
+
+  &-btn {
+    background: #2a9d8f4d;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-top: 8px;
+  }
+}
+
+.divider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 24px;
+  margin: 0 auto;
+  & div{
+    height: 1px;
+    width: 40%;
+    background-color: #ccc;
+  }
+  & span{
+    color: #888;
+    font-size: .75rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.login--alternative {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.alternative{
+  &--link{
+    &_bold {
+      color: #264653;
+      font-weight: 600;
+      font-size: .9rem;
+    }
+    &_small{
+      color: #264653;
+      font-size: .75rem;
+    }
+  
+    &_blue{
+      color: #2a9d8f;
+    }
+  }
+
+  &--paragraph{
+    margin-top: 2.5rem;
+    font-size: .9rem;
+  }
+}
+
+.footer{
+  background-color: #f5f5f5;
+  padding: 16px;
+}
+
+.links-list{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  justify-content: space-around;
+  & img{
+    height: 40px;
+  }
+}
+
+.links--paragraph{
+  font-size: .8rem;
+}
