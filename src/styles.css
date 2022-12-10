@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pacifico&display=swap");
 * {
   box-sizing: border-box;
-  --primary: #2a9d8f;
-  --primary-dark: #264653;
-  --grey: #888;
 }
 
 body {
@@ -17,12 +14,12 @@ ul {
 
 .main {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 450px;
   padding: 2rem;
 }
 .main--login {
   display: flex;
-  max-width: 82%;
+  max-width: 100%;
   margin: 0 auto;
   flex-direction: column;
   text-align: center;
@@ -74,7 +71,7 @@ ul {
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 24px;
+  justify-content: space-between;
   margin: 0 auto;
 }
 .divider div {
@@ -117,6 +114,24 @@ a {
 .footer {
   background-color: #f5f5f5;
   padding: 16px;
+}
+.footer--list {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.footer--list li a {
+  color: #888;
+  opacity: 0.9;
+  font-size: 0.75rem;
+}
+.footer--list li a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 .links-list {
